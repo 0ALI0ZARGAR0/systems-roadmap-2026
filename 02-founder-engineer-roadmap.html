@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>The Founder-Engineer Knowledge Roadmap (2026) | Systems &amp; AI 2026</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Inter:ital,wght@0,400;0,600;1,400;1,600&amp;family=JetBrains Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Engineering 2026"/><meta property="og:title" content="The Founder-Engineer Knowledge Roadmap (2026) | Systems &amp; AI 2026"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="The Founder-Engineer Knowledge Roadmap (2026) | Systems &amp; AI 2026"/><meta name="twitter:description" content="The Founder-Engineer Knowledge Roadmap (2026) Operating Philosophy: Problem-Triggered, Sprint-Based This is not a linear academic syllabus."/><meta property="og:description" content="The Founder-Engineer Knowledge Roadmap (2026) Operating Philosophy: Problem-Triggered, Sprint-Based This is not a linear academic syllabus."/><meta property="og:image:alt" content="The Founder-Engineer Knowledge Roadmap (2026) Operating Philosophy: Problem-Triggered, Sprint-Based This is not a linear academic syllabus."/><meta property="og:image" content="https://0ali0zargar0.github.io/systems-roadmap-2026/static/og-image.png"/><meta property="og:image:url" content="https://0ali0zargar0.github.io/systems-roadmap-2026/static/og-image.png"/><meta name="twitter:image" content="https://0ali0zargar0.github.io/systems-roadmap-2026/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="0ali0zargar0.github.io/systems-roadmap-2026"/><meta property="og:url" content="https://0ali0zargar0.github.io/systems-roadmap-2026/02-founder-engineer-roadmap"/><meta property="twitter:url" content="https://0ali0zargar0.github.io/systems-roadmap-2026/02-founder-engineer-roadmap"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="The Founder-Engineer Knowledge Roadmap (2026) Operating Philosophy: Problem-Triggered, Sprint-Based This is not a linear academic syllabus."/><meta name="generator" content="Quartz"/><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2dvbGRzbWl0aC8uZ2VtaW5pL2FudGlncmF2aXR5L3NjcmF0Y2gvcXVhcnR6LWFwcC9xdWFydHovY29tcG9uZW50cy9zdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://0ali0zargar0.github.io/systems-roadmap-2026/index.xml"/></head><body data-slug="02-founder-engineer-roadmap"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">Engineering 2026</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-3" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>The Founder Engineer Knowledge Roadmap (2026)</a></div></nav><h1 class="article-title">The Founder-Engineer Knowledge Roadmap (2026)</h1><p show-comma="true" class="content-meta"><time datetime="2026-08-16T20:30:00.000Z">Aug 17, 2026</time><span>9 min read</span></p><ul class="tags"><li><a href="./tags/ai/engineering" class="internal tag-link">ai/engineering</a></li><li><a href="./tags/systems/architecture" class="internal tag-link">systems/architecture</a></li><li><a href="./tags/founder/builder" class="internal tag-link">founder/builder</a></li><li><a href="./tags/security" class="internal tag-link">security</a></li><li><a href="./tags/observability" class="internal tag-link">observability</a></li></ul></div></div><article class="popover-hint"><h1 id="the-founder-engineer-knowledge-roadmap-2026">The Founder-Engineer Knowledge Roadmap (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-founder-engineer-knowledge-roadmap-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout abstract" data-callout="abstract">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Operating Philosophy: Problem-Triggered, Sprint-Based </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>This is not a linear academic syllabus.</strong> It is an architectural reference manual with concrete activation triggers.</p>
+<ul>
+<li><strong>Activate a domain</strong> when your product milestone hits that specific engineering boundary.</li>
+<li><strong>Spend one focused sprint</strong> locking down the underlying mental model.</li>
+<li><strong>Direct AI agents</strong> with clear specifications, audit their diffs, and ship.</li>
+<li><strong>Industry Context:</strong> <a href="./01---Industry-Interview--and--Tech-Shifts-Research-2026" class="internal alias" data-slug="01---Industry-Interview--and--Tech-Shifts-Research-2026">Part 1: Industry Research &amp; Technical Shifts</a></li>
+</ul>
+</div>
+</blockquote>
+<hr/>
+<blockquote class="callout info is-collapsible is-collapsed" data-callout="info" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Map of Content </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<ul>
+<li><a href="#domain-1-ai-systems-fluency" class="internal alias">Domain 1: AI Systems Fluency</a></li>
+<li><a href="#domain-2-security-literacy-for-builders-critical" class="internal alias">Domain 2: Security Literacy for Builders (CRITICAL)</a></li>
+<li><a href="#domain-3-cost-engineering--ai-economics-critical" class="internal alias">Domain 3: Cost Engineering &amp; AI Economics (CRITICAL)</a></li>
+<li><a href="#domain-4-distributed-systems-mental-models" class="internal alias">Domain 4: Distributed Systems Mental Models</a></li>
+<li><a href="#domain-5-production-signals--observability" class="internal alias">Domain 5: Production Signals &amp; Observability</a></li>
+<li><a href="#appendix-a-interview-awareness-layer" class="internal alias">Appendix A: Interview Awareness Layer</a></li>
+<li><a href="#appendix-b-pet-qr-code-app-blueprint-5mo-architecture" class="internal alias">Appendix B: Pet QR Code App Blueprint ($5/mo Architecture)</a></li>
+<li><a href="#appendix-c-when-to-pick-up-each-domain-triggers" class="internal alias">Appendix C: When to Pick Up Each Domain (Triggers)</a></li>
+<li><a href="#appendix-d-curated-resource-library" class="internal alias">Appendix D: Curated Resource Library</a></li>
+<li><a href="#appendix-e-the-10-priority-things-to-learn-first" class="internal alias">Appendix E: The 10 Priority Things to Learn First</a></li>
+</ul>
+</div>
+</blockquote>
+<hr/>
+<h2 id="domain-1-ai-systems-fluency">Domain 1: AI Systems Fluency<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-1-ai-systems-fluency" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>Your product relies on AI. This domain determines whether your categorization and retrieval pipelines actually deliver reliable results.</em></p>
+<h3 id="the-pipeline-mental-model">The Pipeline Mental Model<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-pipeline-mental-model" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n    A[\&quot;Raw Note Content\&quot;] -->|Chunking| B[\&quot;Text Chunks\&quot;]\n    B -->|Embedding| C[\&quot;512d Matryoshka Vectors\&quot;]\n    C -->|HNSW Graph Search| D[\&quot;Top-K Candidates\&quot;]\n    D -->|LLM Classifier| E[\&quot;Folder / Topic Assignment\&quot;]&quot;">flowchart LR
+    A[&quot;Raw Note Content&quot;] -->|Chunking| B[&quot;Text Chunks&quot;]
+    B -->|Embedding| C[&quot;512d Matryoshka Vectors&quot;]
+    C -->|HNSW Graph Search| D[&quot;Top-K Candidates&quot;]
+    D -->|LLM Classifier| E[&quot;Folder / Topic Assignment&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<blockquote class="callout danger" data-callout="danger">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Failure Modes Across the 4 Stages </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ol>
+<li><strong>Chunking:</strong> Naive character splitting cuts sentences mid-thought, destroying embedding semantic coherence. Use recursive character splitting (512 tokens with 10–15% overlap) respecting markdown headers.</li>
+<li><strong>Embedding:</strong> Truncating Matryoshka embeddings to 512 dimensions trades ~1.5% recall for a <strong>6x reduction in vector memory and compute</strong>. If classification accuracy drops, verify dimension indexing first.</li>
+<li><strong>Retrieval (HNSW):</strong> As your vector store grows from 10K to 1M items, <strong>recall silently degrades</strong> unless you tune <code>M</code> (connections per node) and <code>ef_search</code> (search beam width).</li>
+<li><strong>Classification:</strong> Underspecified prompts cause erratic folder assignment. Anchor prompt changes to automated evaluation sets.</li>
+</ol>
+</div>
+</blockquote>
+<h3 id="decision-matrix-operational-signals">Decision Matrix: Operational Signals<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#decision-matrix-operational-signals" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Observed Signal</th><th>Root Cause</th><th>Immediate Remediation</th></tr></thead><tbody><tr><td>Users manually reclassify notes</td><td>Classification prompt or model degradation</td><td>Run evaluation dataset; verify embedding consistency</td></tr><tr><td>Search returns irrelevant results</td><td>HNSW recall drop or poor score cutoff</td><td>Log P99 similarity scores; tune <code>ef_search</code> or re-index</td></tr><tr><td>Classification latency > 2s</td><td>NATS queue backlog or upstream rate limit</td><td>Check queue consumer depth; add circuit breaker</td></tr><tr><td>Sudden token spend spike</td><td>Long document fragmented into 200+ chunks</td><td>Enforce <code>max_chunks_per_note</code> ingestion limit</td></tr></tbody></table></div>
+<h3 id="project-anchor--core-focus">Project Anchor &amp; Core Focus<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#project-anchor--core-focus" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Vault Milestone:</strong> Construct a <strong>golden test dataset</strong> (50 representative notes paired with verified target folders). Run regression evals on every prompt modification.</li>
+<li><strong>Rule of Thumb:</strong> <strong>Evals precede feature delivery.</strong> Never deploy classification or search changes without an automated eval harness.</li>
+</ul>
+<h3 id="domain-1-resources">Domain 1 Resources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-1-resources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Resource</th><th>Format</th><th>Time</th><th>Key Takeaway</th></tr></thead><tbody><tr><td><a href="https://hamel.dev/blog/posts/evals/" class="external">hamel.dev — Your AI product needs evals<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Article</td><td>30 min</td><td>Practical methodology for building golden evaluation sets</td></tr><tr><td><a href="https://docs.ragas.io/en/latest/concepts/metrics/index.html" class="external">RAGAS Documentation — Evaluation Metrics<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Docs</td><td>1 hr</td><td>Measuring faithfulness, answer relevance, and context recall</td></tr><tr><td><a href="https://langfuse.com/docs/deployment/self-host" class="external">Langfuse Self-Hosting Guide<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Docs</td><td>2 hr</td><td>VPS deployment for tracing FastAPI and background workers</td></tr><tr><td><a href="https://huyenchip.com/2023/10/18/llm-embeddings.html" class="external">Chip Huyen — Embeddings<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Article</td><td>45 min</td><td>Matryoshka embeddings and dimension truncation tradeoffs</td></tr><tr><td><a href="https://www.youtube.com/watch?v=t9IDoenf-lo" class="external">ByteByteGo — Vector Databases Explained<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>YouTube</td><td>12 min</td><td>Visual walkthrough of HNSW graph construction and indexing</td></tr><tr><td><a href="https://www.youtube.com/@ArpitBhayani" class="external">Arpit Bhayani — RAG Deep Dive<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>YouTube</td><td>30 min</td><td>Real-world engineering patterns for production RAG pipelines</td></tr></tbody></table></div>
+<hr/>
+<h2 id="domain-2-security-literacy-for-builders-critical">Domain 2: Security Literacy for Builders (CRITICAL)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-2-security-literacy-for-builders-critical" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>Security vulnerabilities in multi-tenant data layers are catastrophic. AI coding tools frequently introduce subtle authorization bypasses.</em></p>
+<h3 id="mental-model-horizontal-privilege-escalation">Mental Model: Horizontal Privilege Escalation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mental-model-horizontal-privilege-escalation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Authentication = &quot;Who are you?&quot;  --> Managed by Clerk (JWT verification)
+Authorization  = &quot;What can you see?&quot; --> YOU must enforce at the database layer
+</code></pre>
+<blockquote class="callout danger" data-callout="danger">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>The Common AI Security Blind Spot </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>AI coding assistants regularly produce endpoints vulnerable to Broken Object Level Authorization (BOLA/IDOR):</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">@app.get</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;/notes/</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">{note_id}</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">async</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> def</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> get_note</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(note_id: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">str</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, user </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> Depends(get_current_user)):</span></span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">    # VULNERABILITY: Missing tenant check (AND user_id = user.id)</span></span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">    # Any authenticated user can read another tenant's note by guessing the UUID.</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">    return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> db.query(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;SELECT * FROM notes WHERE id = $1&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, note_id)</span></span></code></pre></figure>
+</div>
+</blockquote>
+<h3 id="four-non-negotiable-defenses">Four Non-Negotiable Defenses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#four-non-negotiable-defenses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart TD\n    Req[\&quot;Incoming HTTP Request\&quot;] --> Auth[\&quot;1. Clerk JWT Verification\&quot;]\n    Auth --> AppAuth[\&quot;2. FastAPI Scope Check: user_id == current_user.id\&quot;]\n    AppAuth --> RLS[\&quot;3. Postgres Row-Level Security: Kernel-level Filter\&quot;]\n    RLS --> DB[(\&quot;PostgreSQL Database\&quot;)]&quot;">flowchart TD
+    Req[&quot;Incoming HTTP Request&quot;] --> Auth[&quot;1. Clerk JWT Verification&quot;]
+    Auth --> AppAuth[&quot;2. FastAPI Scope Check: user_id == current_user.id&quot;]
+    AppAuth --> RLS[&quot;3. Postgres Row-Level Security: Kernel-level Filter&quot;]
+    RLS --> DB[(&quot;PostgreSQL Database&quot;)]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<ol>
+<li><strong>Database Row-Level Security (RLS):</strong>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="sql" data-theme="github-light github-dark"><code data-language="sql" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">ALTER</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> TABLE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> notes </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">ENABLE</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> ROW</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> LEVEL</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> SECURITY</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">;</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">CREATE</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> POLICY</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> user_isolation </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">ON</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> notes</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">    USING</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> (user_id </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> current_setting(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'app.current_user_id'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)::uuid);</span></span></code></pre></figure>
+</li>
+<li><strong>Structural Prompt Delimiters:</strong> Wrap untrusted user input inside explicit XML boundary tags (<code>&lt;user_note>...&lt;/user_note></code>) with explicit system instructions prohibiting the model from parsing instructions within those boundaries.</li>
+<li><strong>OWASP Top 10 for LLMs:</strong> Account for Prompt Injection (LLM01), Insecure Output Handling (LLM02), and Sensitive Information Disclosure (LLM06).</li>
+<li><strong>Idempotent Webhook Verification:</strong> Verify HMAC signatures on all third-party webhooks (RevenueCat, Clerk), handle duplicate event deliveries idempotently, and check active entitlements at request time.</li>
+</ol>
+<h3 id="domain-2-resources">Domain 2 Resources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-2-resources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Resource</th><th>Format</th><th>Time</th><th>Key Takeaway</th></tr></thead><tbody><tr><td><a href="https://genai.owasp.org/" class="external">OWASP LLM Top 10<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Reference</td><td>20 min</td><td>Core vulnerability vectors in LLM-powered applications</td></tr><tr><td><a href="https://simonwillison.net/series/prompt-injection/" class="external">Simon Willison — Prompt Injection Series<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Articles</td><td>2 hr</td><td>Anatomy of direct and indirect prompt injection exploits</td></tr><tr><td><a href="https://supabase.com/docs/guides/database/postgres/row-level-security" class="external">Supabase RLS Guide<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Docs</td><td>1 hr</td><td>Practical PostgreSQL Row-Level Security configuration</td></tr><tr><td><a href="https://portswigger.net/web-security/access-control" class="external">PortSwigger Web Security — Access Control<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Interactive</td><td>3 hr</td><td>Hands-on labs on Broken Object Level Authorization (BOLA)</td></tr><tr><td><a href="https://www.wiz.io/blog/tag/ai-security" class="external">Wiz AI Security Research<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Blog</td><td>Ongoing</td><td>Real-world postmortems of AI-targeted exploits</td></tr></tbody></table></div>
+<hr/>
+<h2 id="domain-3-cost-engineering--ai-economics-critical">Domain 3: Cost Engineering &amp; AI Economics (CRITICAL)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-3-cost-engineering--ai-economics-critical" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>A single runaway agent loop or un-cached batch job can exhaust your monthly compute budget overnight.</em></p>
+<h3 id="three-cost-dimensions">Three Cost Dimensions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#three-cost-dimensions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Layer 1: Provider Rates  --- Per-token pricing from model providers
+Layer 2: User Workloads  --- Query volume and document sizes per active user
+Layer 3: Waste &amp; Retries --- Un-cached system prompts, duplicate worker retries
+</code></pre>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Practical Cost Levers </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><strong>Prefix Caching:</strong> Place static instructions, tool definitions, and few-shot pairs at the start of prompts. Reduces input token billing by 50–90%.</li>
+<li><strong>Matryoshka Truncation (512d):</strong> Reduces vector RAM and indexing overhead by 6x with negligible recall impact.</li>
+<li><strong>Worker Idempotency Keys:</strong> Prevents a restarted NATS worker from re-issuing duplicate embedding API calls for already-processed chunks.</li>
+<li><strong>Per-User Quotas &amp; Kill-Switches:</strong> Enforce daily token caps per user with graceful degradation (HTTP 402 / friendly rate limit messages).</li>
+</ul>
+</div>
+</blockquote>
+<h3 id="usage-quota-architecture-postgresql--redis">Usage Quota Architecture (PostgreSQL + Redis)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#usage-quota-architecture-postgresql--redis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="sql" data-theme="github-light github-dark"><code data-language="sql" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">CREATE</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> TABLE</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> tenant_quotas</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> (</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    tenant_id UUID </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">PRIMARY KEY</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    daily_token_limit </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">INT</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> NOT NULL</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> DEFAULT</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> 500000</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    tokens_used_today </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">INT</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> NOT NULL</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> DEFAULT</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    reset_at </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">TIMESTAMPTZ</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> NOT NULL</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> DEFAULT</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> NOW</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">+</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> INTERVAL </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'1 day'</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span></span></code></pre></figure>
+<h3 id="domain-3-resources">Domain 3 Resources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-3-resources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Resource</th><th>Format</th><th>Time</th><th>Key Takeaway</th></tr></thead><tbody><tr><td><a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching" class="external">Anthropic — Prompt Caching<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Docs</td><td>20 min</td><td>Structuring context to maximize prefix cache hit rates</td></tr><tr><td><a href="https://platform.openai.com/docs/guides/latency-optimization" class="external">OpenAI — Latency &amp; Cost Optimization<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Docs</td><td>30 min</td><td>Token reduction, streaming responses, and prompt tuning</td></tr><tr><td><a href="https://langfuse.com/docs/model-usage-and-cost" class="external">Langfuse — Per-User Cost Tracking<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Docs</td><td>45 min</td><td>Tagging and aggregating LLM costs by <code>user_id</code></td></tr><tr><td><a href="https://www.youtube.com/watch?v=mhUQe4BKZXs" class="external">ByteByteGo — Rate Limiting Algorithms<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>YouTube</td><td>12 min</td><td>Sliding window logs and token bucket mechanics</td></tr></tbody></table></div>
+<hr/>
+<h2 id="domain-4-distributed-systems-mental-models">Domain 4: Distributed Systems Mental Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-4-distributed-systems-mental-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>You do not need to build distributed databases from scratch. You need the vocabulary and failure models to direct AI tooling and make sound architectural tradeoffs.</em></p>
+<h3 id="messaging-guarantees--sync-architecture">Messaging Guarantees &amp; Sync Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#messaging-guarantees--sync-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n    subgraph Message_Queues [\&quot;NATS JetStream Delivery\&quot;]\n        AtLeastOnce[\&quot;At-Least-Once Delivery\&quot;] --> IdempotentWorker[\&quot;Idempotent Consumer Required\&quot;]\n    end\n    subgraph Sync_Engine [\&quot;Hybrid Sync Model\&quot;]\n        PowerSync[\&quot;PowerSync: LWW at Block Level\&quot;]\n        Yjs[\&quot;Yjs CRDT: Character-Level Inside Paragraphs\&quot;]\n    end&quot;">flowchart LR
+    subgraph Message_Queues [&quot;NATS JetStream Delivery&quot;]
+        AtLeastOnce[&quot;At-Least-Once Delivery&quot;] --> IdempotentWorker[&quot;Idempotent Consumer Required&quot;]
+    end
+    subgraph Sync_Engine [&quot;Hybrid Sync Model&quot;]
+        PowerSync[&quot;PowerSync: LWW at Block Level&quot;]
+        Yjs[&quot;Yjs CRDT: Character-Level Inside Paragraphs&quot;]
+    end
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<blockquote class="callout info" data-callout="info">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Architectural Tradeoff Summary </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><strong>NATS JetStream:</strong> Provides <strong>At-Least-Once</strong> delivery. If a consumer crashes while generating embeddings, NATS redelivers the message. Your database must enforce a unique constraint on <code>(note_id, chunk_index)</code> to prevent duplicate vector rows.</li>
+<li><strong>PowerSync + Yjs Hybrid:</strong> Last-Write-Wins (LWW) manages coarse block order (fast, simple metadata updates); Yjs CRDT resolves concurrent offline edits within individual text blocks without merge conflicts.</li>
+</ul>
+</div>
+</blockquote>
+<h3 id="domain-4-resources">Domain 4 Resources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-4-resources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Resource</th><th>Format</th><th>Time</th><th>Key Takeaway</th></tr></thead><tbody><tr><td><a href="https://www.youtube.com/@ByteByteGo" class="external">ByteByteGo YouTube Channel<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>YouTube</td><td>15 min/vid</td><td>Visual system design (queues, caching, database indexing)</td></tr><tr><td><a href="https://github.com/donnemartin/system-design-primer" class="external">System Design Primer (GitHub)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Reference</td><td>As-needed</td><td>Comprehensive systems reference guide</td></tr><tr><td><a href="https://www.youtube.com/@hnasr" class="external">Hussein Nasser — Backend Engineering<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>YouTube</td><td>30 min</td><td>Database internals, connection pools, and network protocols</td></tr><tr><td><a href="https://docs.nats.io/nats-concepts/jetstream/consumers" class="external">NATS JetStream — Consumer Concepts<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Docs</td><td>30 min</td><td><code>AckPolicy</code>, <code>AckWait</code>, and <code>MaxDeliver</code> configurations</td></tr><tr><td><a href="https://www.youtube.com/watch?v=x7drE24geUw" class="external">Martin Kleppmann — CRDTs Explained<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>YouTube</td><td>1 hr</td><td>Foundational theory behind conflict-free replicated data types</td></tr></tbody></table></div>
+<hr/>
+<h2 id="domain-5-production-signals--observability">Domain 5: Production Signals &amp; Observability<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-5-production-signals--observability" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="four-observability-layers">Four Observability Layers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#four-observability-layers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Layer 4: Business Telemetry   --- Notes captured, AI queries executed, conversion funnel
+Layer 2: AI Quality Metrics   --- P99 classification latency, token burn, eval drift scores
+Layer 2: Application Health   --- FastAPI error rates, NATS backlog depth, database pool wait
+Layer 1: Host Infrastructure  --- VPS CPU, RAM utilization, disk I/O (Netdata)
+</code></pre>
+<h3 id="domain-5-resources">Domain 5 Resources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-5-resources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Resource</th><th>Format</th><th>Time</th><th>Key Takeaway</th></tr></thead><tbody><tr><td><a href="https://langfuse.com/docs/tracing" class="external">Langfuse — Tracing &amp; Spans<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Docs</td><td>1 hr</td><td>Instrumenting FastAPI endpoints and async worker jobs</td></tr><tr><td><a href="https://github.com/trallnag/prometheus-fastapi-instrumentator" class="external">prometheus-fastapi-instrumentator<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>GitHub</td><td>30 min</td><td>Standard metrics instrumentation for FastAPI</td></tr><tr><td><a href="https://openobserve.ai/docs/user-guide/logs/log-search/" class="external">OpenObserve Log Querying<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Docs</td><td>1 hr</td><td>SQL-based log querying and aggregation</td></tr><tr><td><a href="https://charity.wtf" class="external">Charity Majors — Observability Philosophy<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td><td>Blog</td><td>Ongoing</td><td>Practical principles of actionable systems observability</td></tr></tbody></table></div>
+<hr/>
+<h2 id="appendix-a-interview-awareness-layer">Appendix A: Interview Awareness Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#appendix-a-interview-awareness-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>System Scenario</th><th>How It Manifests in Vault</th><th>How to Articulate Your Decision</th></tr></thead><tbody><tr><td><strong>Asynchronous Message Processing</strong></td><td>NATS JetStream embedding pipeline</td><td><em>”Used at-least-once delivery combined with idempotent database writes to survive worker restarts without duplicate records.”</em></td></tr><tr><td><strong>Fault Tolerance &amp; Retries</strong></td><td>FastStream worker with OpenAI retries</td><td><em>”Configured AckWait timeouts and exponential full-jitter retries to handle upstream rate limits and transient network partitions.”</em></td></tr><tr><td><strong>Data Synchronization</strong></td><td>PowerSync LWW + Yjs CRDT</td><td><em>”Applied Last-Write-Wins at the block metadata level for speed, and character-level CRDTs inside text blocks to preserve concurrent offline edits.”</em></td></tr><tr><td><strong>Multi-Tenant Isolation</strong></td><td>PostgreSQL Row-Level Security</td><td><em>”Enforced RLS in the database engine as a defense-in-depth barrier against application-level authorization bugs.”</em></td></tr><tr><td><strong>Cost &amp; Latency Optimization</strong></td><td>512d Matryoshka + HNSW Index</td><td><em>”Truncated embeddings to 512 dimensions to cut vector memory by 6x while retaining >98% retrieval accuracy at sub-50ms search latency.”</em></td></tr></tbody></table></div>
+<hr/>
+<h2 id="appendix-b-pet-qr-code-app-blueprint-5mo-architecture">Appendix B: Pet QR Code App Blueprint ($5/mo Architecture)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#appendix-b-pet-qr-code-app-blueprint-5mo-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Compute &amp; Database:</strong> Single Hetzner VPS ($5/mo), Docker Compose managed via Coolify.</li>
+<li><strong>Image Storage:</strong> Cloudflare R2 (S3-compatible, <strong>$0 egress fees</strong>, free first 10GB).</li>
+<li><strong>QR Redirect Mechanics:</strong> Standard HTTPS redirect URL (<code>https://app.com/p/{uuid}</code>) <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">o</span></span></span></span> server-generated QR code <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">o</span></span></span></span> reliable scanning across all native camera apps without deep-linking edge cases.</li>
+</ul>
+<hr/>
+<h2 id="appendix-c-when-to-pick-up-each-domain-triggers">Appendix C: When to Pick Up Each Domain (Triggers)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#appendix-c-when-to-pick-up-each-domain-triggers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>+-------------------------------------------------------------------------+
+| WHEN YOU ARE...                                        | FOCUS ON...    |
++-------------------------------------------------------------------------+
+| Configuring Clerk auth &amp; database migrations           | Domain 2 (Sec) |
+| Implementing AI classification &amp; semantic search       | Domain 1 + D3  |
+| Setting up NATS JetStream workers &amp; sync mechanisms    | Domain 4 (Sys) |
+| Deploying to production with active beta users         | Domain 5 (Obs) |
+| Discussing architecture during technical reviews       | Appendix A     |
++-------------------------------------------------------------------------+
+</code></pre>
+<hr/>
+<h2 id="appendix-d-curated-resource-library">Appendix D: Curated Resource Library<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#appendix-d-curated-resource-library" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="video-channels">Video Channels<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#video-channels" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong><a href="https://www.youtube.com/@ByteByteGo" class="external">ByteByteGo<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> — Clear visual breakdowns of distributed architectures.</li>
+<li><strong><a href="https://www.youtube.com/@ArpitBhayani" class="external">Arpit Bhayani<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> — Real-world systems design, database internals, and RAG pipelines.</li>
+<li><strong><a href="https://www.youtube.com/@hnasr" class="external">Hussein Nasser<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> — Deep dives into networking, HTTP/3, and PostgreSQL internals.</li>
+<li><strong><a href="https://www.youtube.com/@AndrejKarpathy" class="external">Andrej Karpathy<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> — First-principles breakdowns of neural networks and transformers.</li>
+</ul>
+<h3 id="engineering-blogs">Engineering Blogs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#engineering-blogs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong><a href="https://pragmaticengineer.com" class="external">The Pragmatic Engineer<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> (Gergely Orosz) — Engineering leadership, compensation trends, and hiring realities.</li>
+<li><strong><a href="https://hamel.dev" class="external">hamel.dev<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> (Hamel Husain) — High-signal guidance on LLM evaluations and production AI systems.</li>
+<li><strong><a href="https://huyenchip.com/blog" class="external">Chip Huyen’s Blog<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> — Real-world machine learning systems and feature store architectures.</li>
+<li><strong><a href="https://simonwillison.net" class="external">Simon Willison<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> — Practical AI security, prompt injection research, and builder field notes.</li>
+</ul>
+<h3 id="technical-references">Technical References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#technical-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong><a href="https://github.com/donnemartin/system-design-primer" class="external">system-design-primer<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> — Broad systems design reference encyclopedia.</li>
+<li><strong><a href="https://github.com/eugeneyan/applied-ml" class="external">applied-ml<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> — Production machine learning architectures across leading tech companies.</li>
+<li><strong><a href="https://github.com/tensorchord/Awesome-LLMOps" class="external">Awesome-LLMOps<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> — Curated tooling index for LLM serving, evaluation, and fine-tuning.</li>
+</ul>
+<hr/>
+<h2 id="appendix-e-the-10-priority-things-to-learn-first">Appendix E: The 10 Priority Things to Learn First<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#appendix-e-the-10-priority-things-to-learn-first" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>Golden Evaluation Harness:</strong> Build a 50-item evaluation set scoring faithfulness and answer relevance.</li>
+<li><strong>Postgres Row-Level Security:</strong> Enable RLS and verify multi-tenant isolation policies.</li>
+<li><strong>Idempotency State Machines:</strong> Implement atomic Redis <code>SET NX EX</code> locks for stateful writes and webhooks.</li>
+<li><strong>Matryoshka Truncation &amp; HNSW Tuning:</strong> Truncate vectors to 512 dimensions and benchmark recall vs. memory.</li>
+<li><strong>Prefix Caching Layout:</strong> Organize system instructions, tool schemas, and dynamic user inputs for cache hits.</li>
+<li><strong>Exponential Backoff with Full Jitter:</strong> Eliminate thundering herds during upstream provider degradation.</li>
+<li><strong>Transactional Outbox Pattern:</strong> Prevent database vs. message broker dual-write hazards.</li>
+<li><strong>NATS JetStream Consumer Invariants:</strong> Configure explicit acknowledgments (<code>AckWait</code>) and idempotent consumers.</li>
+<li><strong>Span-Level Tracing with Langfuse:</strong> Instrument async background workers with latency and token cost tracking.</li>
+<li><strong>Prompt Delimiter Boundaries:</strong> Structure untrusted content inside isolated XML blocks.</li>
+</ol></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#the-founder-engineer-knowledge-roadmap-2026" data-for="the-founder-engineer-knowledge-roadmap-2026">The Founder-Engineer Knowledge Roadmap (2026)</a></li><li class="depth-1"><a href="#domain-1-ai-systems-fluency" data-for="domain-1-ai-systems-fluency">Domain 1: AI Systems Fluency</a></li><li class="depth-2"><a href="#the-pipeline-mental-model" data-for="the-pipeline-mental-model">The Pipeline Mental Model</a></li><li class="depth-2"><a href="#decision-matrix-operational-signals" data-for="decision-matrix-operational-signals">Decision Matrix: Operational Signals</a></li><li class="depth-2"><a href="#project-anchor--core-focus" data-for="project-anchor--core-focus">Project Anchor &amp; Core Focus</a></li><li class="depth-2"><a href="#domain-1-resources" data-for="domain-1-resources">Domain 1 Resources</a></li><li class="depth-1"><a href="#domain-2-security-literacy-for-builders-critical" data-for="domain-2-security-literacy-for-builders-critical">Domain 2: Security Literacy for Builders (CRITICAL)</a></li><li class="depth-2"><a href="#mental-model-horizontal-privilege-escalation" data-for="mental-model-horizontal-privilege-escalation">Mental Model: Horizontal Privilege Escalation</a></li><li class="depth-2"><a href="#four-non-negotiable-defenses" data-for="four-non-negotiable-defenses">Four Non-Negotiable Defenses</a></li><li class="depth-2"><a href="#domain-2-resources" data-for="domain-2-resources">Domain 2 Resources</a></li><li class="depth-1"><a href="#domain-3-cost-engineering--ai-economics-critical" data-for="domain-3-cost-engineering--ai-economics-critical">Domain 3: Cost Engineering &amp; AI Economics (CRITICAL)</a></li><li class="depth-2"><a href="#three-cost-dimensions" data-for="three-cost-dimensions">Three Cost Dimensions</a></li><li class="depth-2"><a href="#usage-quota-architecture-postgresql--redis" data-for="usage-quota-architecture-postgresql--redis">Usage Quota Architecture (PostgreSQL + Redis)</a></li><li class="depth-2"><a href="#domain-3-resources" data-for="domain-3-resources">Domain 3 Resources</a></li><li class="depth-1"><a href="#domain-4-distributed-systems-mental-models" data-for="domain-4-distributed-systems-mental-models">Domain 4: Distributed Systems Mental Models</a></li><li class="depth-2"><a href="#messaging-guarantees--sync-architecture" data-for="messaging-guarantees--sync-architecture">Messaging Guarantees &amp; Sync Architecture</a></li><li class="depth-2"><a href="#domain-4-resources" data-for="domain-4-resources">Domain 4 Resources</a></li><li class="depth-1"><a href="#domain-5-production-signals--observability" data-for="domain-5-production-signals--observability">Domain 5: Production Signals &amp; Observability</a></li><li class="depth-2"><a href="#four-observability-layers" data-for="four-observability-layers">Four Observability Layers</a></li><li class="depth-2"><a href="#domain-5-resources" data-for="domain-5-resources">Domain 5 Resources</a></li><li class="depth-1"><a href="#appendix-a-interview-awareness-layer" data-for="appendix-a-interview-awareness-layer">Appendix A: Interview Awareness Layer</a></li><li class="depth-1"><a href="#appendix-b-pet-qr-code-app-blueprint-5mo-architecture" data-for="appendix-b-pet-qr-code-app-blueprint-5mo-architecture">Appendix B: Pet QR Code App Blueprint ($5/mo Architecture)</a></li><li class="depth-1"><a href="#appendix-c-when-to-pick-up-each-domain-triggers" data-for="appendix-c-when-to-pick-up-each-domain-triggers">Appendix C: When to Pick Up Each Domain (Triggers)</a></li><li class="depth-1"><a href="#appendix-d-curated-resource-library" data-for="appendix-d-curated-resource-library">Appendix D: Curated Resource Library</a></li><li class="depth-2"><a href="#video-channels" data-for="video-channels">Video Channels</a></li><li class="depth-2"><a href="#engineering-blogs" data-for="engineering-blogs">Engineering Blogs</a></li><li class="depth-2"><a href="#technical-references" data-for="technical-references">Technical References</a></li><li class="depth-1"><a href="#appendix-e-the-10-priority-things-to-learn-first" data-for="appendix-e-the-10-priority-things-to-learn-first">Appendix E: The 10 Priority Things to Learn First</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="./" class="internal">Systems Architecture &amp; Engineering Roadmap (2026)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>
